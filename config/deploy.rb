@@ -8,7 +8,7 @@ load "config/recipes/nodejs"
 load "config/recipes/rbenv"
 load "config/recipes/check"
 
-server "", :web, :app, :db, primary: true
+server "198.199.91.118", :web, :app, :db, primary: true
 
 set :user, "deployer"
 set :application, "blog"
@@ -17,7 +17,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "git@github.com:ryanb/#{application}.git"
+set :repository, "git@github.com:Arpit1989/#{application}.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
